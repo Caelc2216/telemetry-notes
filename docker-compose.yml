@@ -1,0 +1,10 @@
+services:
+  my_container:
+    image: gitea/gitea:latest
+    restart: always
+    volumes:
+      - gitea_data:/data
+    ports:
+      - 3000:3000
+    volumes:
+      gitea_data:
